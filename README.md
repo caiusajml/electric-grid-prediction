@@ -57,7 +57,7 @@ This project demonstrates proficiency in:
 
 4. **Run the GUI**:
    ```bash
-   python src/gui.py
+   python -m gui.py
    ```
 
 ---
