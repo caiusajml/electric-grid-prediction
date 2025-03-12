@@ -1,4 +1,4 @@
-# Showcase Project: [Electric Grid Anomaly Detection Model]
+# Showcase Project: Electric Grid Anomaly Detection Model
 
 This repository showcases a use of python, numpy, pandas, pytorch, tensorflow(keras).
 The project is designed to train 4 models using Pytorch and tensorflow and to compare them against their capabilities to predict.
