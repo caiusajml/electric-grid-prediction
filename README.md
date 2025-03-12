@@ -47,12 +47,12 @@ This project demonstrates proficiency in:
    
 2. **Create and Activate a Virtual Environment**:
    ```bash
-   python3 -m venv venv
+   virtualenv  --python 3.8 venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    
 3. **Install Dependencies**:
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    
 
 4. **Run the GUI**:
