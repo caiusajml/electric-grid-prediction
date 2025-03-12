@@ -2,7 +2,7 @@
 
 This repository showcases a use of python, numpy, pandas, pytorch, tensorflow(keras).
 The project is designed to train 4 models using Pytorch and tensorflow and to compare them against their capabilities to predict.
-Without the acces to realdata this project resorted generating synthetic healthy data using libraries. trgenerate healthy electric grid data and train four different models with the data  [brief description of the project, e.g., "simple machine learning pipeline for [task]", "data processing and visualization tool", "interactive GUI application for [purpose]"]. It was created as a supplementary project for post-interview demonstration.
+Without the acces to realdata this project resorted to generating synthetic healthy data using libraries in order to generate healthy electric grid data and train four different models.
 
 # Electric Grid Prediction
 
