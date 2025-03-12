@@ -57,7 +57,7 @@ This project demonstrates proficiency in:
 
 4. **Run the GUI**:
    ```bash
-   python3 -m gui.py
+   python3 -m src.gui.py
    ```
 
 ---
@@ -67,7 +67,7 @@ Running the GUI
 
 Launch the application with:
    ```bash
-   python src/gui.py
+   python3 -m src.gui.py
    ```
 ### GUI Walkthrough
 
