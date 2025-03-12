@@ -47,7 +47,7 @@ This project demonstrates proficiency in:
    
 2. **Create and Activate a Virtual Environment**:
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    
 3. **Install Dependencies**:
@@ -57,7 +57,7 @@ This project demonstrates proficiency in:
 
 4. **Run the GUI**:
    ```bash
-   python -m gui.py
+   python3 -m gui.py
    ```
 
 ---
