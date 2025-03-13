@@ -12,7 +12,7 @@ Without the acces to realdata this project resorted to generating synthetic heal
 
 ## Overview
 
-`electric-grid-prediction` is a sophisticated tool designed to forecast electric grid load over a 24-hour period using synthetic data. It leverages four distinct neural network architectures—Feedforward Neural Network (FFNN), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), and Transformer—implemented in both TensorFlow and PyTorch frameworks. The project includes a Tkinter-based graphical user interface (GUI) that allows users to train models, evaluate their performance, and visualize predictions with ease.
+`electric-grid-prediction` is a tool designed to forecast electric grid load over a 24-hour period using synthetic data. It leverages four distinct neural network architectures—Feedforward Neural Network (FFNN), Long Short-Term Memory (LSTM), Convolutional Neural Network (CNN), and Transformer—implemented in both TensorFlow and PyTorch frameworks. The project includes a Tkinter-based graphical user interface (GUI) that allows users to train models, evaluate their performance, and visualize predictions with ease.
 
 This project demonstrates proficiency in:
 - Libraries: numpy, pandas, pytorch, tensorflow(keras)
@@ -33,10 +33,29 @@ This project demonstrates proficiency in:
 
 ---
 
+## Model Descriptions
+
+This project utilizes several neural network models for prediction tasks. Here's a brief overview of each:
+
+* **Recurrent Neural Networks (RNNs) & Long Short-Term Memory (LSTMs):**
+    * RNNs are designed to process sequential data by maintaining an internal memory. LSTMs, a specialized type of RNN, address the vanishing gradient problem, enabling them to learn long-range dependencies.
+    * **Use Case:** Best suited for sequential data, like time series. LSTMs, a type of RNN, excel at capturing long-term patterns in the data.
+* **Convolutional Neural Networks (CNNs):**
+    * CNNs use convolutional layers to automatically learn spatial or temporal hierarchies of features from data. In 1D applications, they slide filters across the sequence to detect local patterns.
+    * **Use Case:** While commonly used for images, 1D CNNs can analyze time series data by identifying local patterns and features within the sequence.
+* **Feedforward Neural Networks (FFNNs):**
+    * FFNNs are the most basic type of neural network, where information flows in one direction, from input to output, through interconnected layers.
+    * **Use Case:** A simpler model ideal for prediction tasks without strong time dependencies. Suitable when the data lacks significant sequential structure.
+* **Transformers:**
+    * Transformers rely on attention mechanisms to weigh the importance of different parts of the input sequence, allowing them to capture long-range dependencies effectively. They do not rely on reccurence.
+    * **Use Case:** Powerful models that can effectively capture long-range dependencies in time series data. Often outperform LSTMs in complex applications.
+
+---
+
 ## Installation
 
 ### Prerequisites
-- Python 3.8+
+- Python 3.8
 - Virtual environment (recommended)
 
 ### Setup
@@ -57,7 +76,7 @@ This project demonstrates proficiency in:
 
 4. **Run the GUI**:
    ```bash
-   python3 -m src.gui.py
+   python3 -m src.gui
    ```
 
 ---
@@ -67,7 +86,7 @@ Running the GUI
 
 Launch the application with:
    ```bash
-   python3 -m src.gui.py
+   python3 -m src.gui
    ```
 ### GUI Walkthrough
 
@@ -120,9 +139,29 @@ electric-grid-prediction/
 - **GUI Improvements:** Add progress bars, metric tables, and model export options.
 - **Spinoff Project:** "Threat Anomaly Detection" using TensorFlow CNN to identify grid anomalies.
 
-Author
-Kay Lancucki
+## Troubleshooting
+** Tkinter Not Found (Especially on Ubuntu):
 
-Email: kay.lancucki@gmail.com
-GitHub: github.com/caiusajml
-Crafted with precision to demonstrate machine learning and software engineering skills for real-world applications.
+### If you encounter an error indicating that the tkinter module is not found, especially on Ubuntu or other Debian-based Linux distributions, you will likely need to install it manually. Tkinter is often packaged separately from the main Python installation.
+
+### To install Tkinter on Ubuntu, use the following command:
+
+```bash
+sudo apt-get install python3-tk
+```
+
+### After installing Tkinter, try running the GUI again:
+
+```bash
+python3 -m src.gui.py
+```
+
+### This should resolve the issue.
+
+
+## Author
+## Kay Lancucki
+
+## Email: kay.lancucki@gmail.com
+### GitHub: github.com/caiusajml
+## Crafted with precision to demonstrate machine learning and software engineering skills for real-world applications.
